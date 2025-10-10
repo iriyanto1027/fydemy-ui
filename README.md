@@ -2,6 +2,8 @@
 
 A lightweight UI-kit library. Components are written in CSS and Typescript without external parties such as `RadixUI` and `TailwindCSS`.
 
+![demo](https://raw.githubusercontent.com/devswithme/ui/refs/heads/main/demo.gif)
+
 ## Installation
 
 ```
