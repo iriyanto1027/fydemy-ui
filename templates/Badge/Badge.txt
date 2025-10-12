@@ -1,0 +1,29 @@
+import './Badge.css';
+
+type BadgeVariant =
+    | 'default'
+    | 'secondary'
+    | 'destructive'
+    | 'outline'
+
+interface BadgeProps {
+    variant?: BadgeVariant
+    children: React.ReactNode
+    className?: string
+}
+
+const Badge: React.FC<BadgeProps> = ({
+    variant = 'default',
+    children,
+    className = ''
+}) => {
+    const badgeClasses = `badge badge-${variant} ${className}`.trim();
+
+    return (
+        <span className={badgeClasses}>
+            {children}
+        </span>
+    );
+};
+
+export default Badge;
